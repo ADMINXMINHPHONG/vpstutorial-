@@ -1,24 +1,4 @@
-# -*- coding: utf-8 -*-
-# Protected by XOR+ZLIB+BASE64 (3 layers)
-# Generated: 2026-01-16 12:33:06
 
-import os
-import sys
-
-# Ép Kivy sử dụng SDL2 - trình hiển thị chuẩn trên Android
-os.environ['KIVY_WINDOW'] = 'sdl2'
-os.environ['KIVY_TEXT'] = 'sdl2'
-os.environ['KIVY_IMAGE'] = 'sdl2'
-
-# Tắt chức năng tự tìm kiếm cấu hình hệ thống (tránh tìm nhầm mtdev)
-os.environ['KIVY_NO_CONFIG'] = '1'
-
-# Thêm đường dẫn thư viện hệ thống vào môi trường
-lib_path = "/data/user/0/ru.iiec.pydroid3/files/x86_64-linux-android/lib/"
-if lib_path not in os.environ.get('LD_LIBRARY_PATH', ''):
-    os.environ['LD_LIBRARY_PATH'] = lib_path + ":" + os.environ.get('LD_LIBRARY_PATH', '')
-
-# -*- coding: utf-8 -*-
 import zlib as _z
 import base64 as _b
 
