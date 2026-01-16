@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-# Protected by XOR+ZLIB+BASE64 (3 layers)
-# Generated: 2026-01-16 14:47:42
-
 import zlib as _z
 import base64 as _b
 
